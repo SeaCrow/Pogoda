@@ -1,0 +1,28 @@
+﻿Build started 2014-10-28 12:26:01.
+     1>Project "C:\Users\Filip\documents\visual studio 2012\Projects\Pogoda\Pogoda\Pogoda.vcxproj" on node 2 (Rebuild target(s)).
+     1>CustomBuild:
+         Moc'ing pogoda.h...
+         Uic'ing pogoda.ui...
+         Rcc'ing pogoda.qrc...
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\Qt5.3.2\5.3\msvc2012_opengl\include /I.\GeneratedFiles\Release /IC:\Qt\Qt5.3.2\5.3\msvc2012_opengl\include\QtCore /IC:\Qt\Qt5.3.2\5.3\msvc2012_opengl\include\QtGui /IC:\Qt\Qt5.3.2\5.3\msvc2012_opengl\include\QtWidgets /nologo /W1 /WX- /O2 /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /D _USING_V110_SDK71_ /D _ATL_STATIC_REGISTRY /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt /D_ATL_XP_TARGETING GeneratedFiles\qrc_pogoda.cpp
+         qrc_pogoda.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\Qt5.3.2\5.3\msvc2012_opengl\include /I.\GeneratedFiles\Release /IC:\Qt\Qt5.3.2\5.3\msvc2012_opengl\include\QtCore /IC:\Qt\Qt5.3.2\5.3\msvc2012_opengl\include\QtGui /IC:\Qt\Qt5.3.2\5.3\msvc2012_opengl\include\QtWidgets /nologo /W1 /WX- /O2 /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /D _USING_V110_SDK71_ /D _ATL_STATIC_REGISTRY /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt /D_ATL_XP_TARGETING GeneratedFiles\Release\moc_pogoda.cpp main.cpp pogoda.cpp
+         moc_pogoda.cpp
+         main.cpp
+         pogoda.cpp
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\bin\rc.exe /D _USING_V110_SDK71_ /l"0x0409" /nologo /fo"Release\Pogoda.res" Pogoda.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Filip\documents\visual studio 2012\Projects\Pogoda\Win32\Release\\Pogoda.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.3.2\5.3\msvc2012_opengl\lib qtmain.lib Qt5Core.lib Qt5Gui.lib Qt5Widgets.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\Include\Manifest\dpiaware.manifest" /PDB:"C:\Users\Filip\documents\visual studio 2012\Projects\Pogoda\Win32\Release\Pogoda.pdb" /SUBSYSTEM:WINDOWS,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Filip\documents\visual studio 2012\Projects\Pogoda\Win32\Release\Pogoda.lib" /MACHINE:X86 /SAFESEH Release\Pogoda.res
+         Release\qrc_pogoda.obj
+         Release\moc_pogoda.obj
+         Release\main.obj
+         Release\pogoda.obj
+         Pogoda.vcxproj -> C:\Users\Filip\documents\visual studio 2012\Projects\Pogoda\Win32\Release\Pogoda.exe
+     1>Done Building Project "C:\Users\Filip\documents\visual studio 2012\Projects\Pogoda\Pogoda\Pogoda.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.15

@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="Pogoda">
+	<file>images/Dzien_50.png</file>
+	<file>images/Noc_50.png</file>
+	<file>images/miasta.png</file>
+	<file>images/save.png</file>
+	<file>images/podglad.png</file>
+	<file>images/ikonki/slonce_50.png</file>
+	<file>images/ikonki/ksiezyc_50.png</file>
+
+
+    </qresource>
+</RCC>

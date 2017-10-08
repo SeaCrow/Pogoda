@@ -1,0 +1,2012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PogodaClass</class>
+ <widget class="QMainWindow" name="PogodaClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1110</width>
+    <height>642</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Pogoda</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label_mapka_tlo">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>960</width>
+      <height>540</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="pogoda.qrc">:/Pogoda/images/Dzien_50.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_zielona">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>280</y>
+      <width>100</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Słońce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Burza</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Śnieg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_wroclaw">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>360</y>
+      <width>100</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Słońce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Burza</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Śnieg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_katowice">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>424</y>
+      <width>100</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Słońce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Burza</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Śnieg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_krakow">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>450</y>
+      <width>100</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Słońce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Burza</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Śnieg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_rzeszow">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>458</y>
+      <width>100</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Słońce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Burza</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Śnieg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_lodz">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>340</y>
+      <width>100</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Słońce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Burza</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Śnieg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_lublin">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>345</y>
+      <width>100</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Słońce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Burza</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Śnieg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_warszawa">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>260</y>
+      <width>100</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Słońce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Burza</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Śnieg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_poznan">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>232</y>
+      <width>100</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Słońce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Burza</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Śnieg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_gorzow">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>195</y>
+      <width>100</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Słońce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Burza</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Śnieg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_szczecin">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>110</y>
+      <width>100</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Słońce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Burza</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Śnieg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_bydgoszcz">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>145</y>
+      <width>100</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Słońce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Burza</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Śnieg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_gdansk">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>80</y>
+      <width>100</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Słońce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Burza</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Śnieg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_olsztyn">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>150</y>
+      <width>100</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Słońce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Burza</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Śnieg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_bialystok">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>200</y>
+      <width>100</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Słońce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Burza</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Śnieg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_suwalki">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>105</y>
+      <width>100</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Słońce</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Słońce/Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Deszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Burza</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Śnieg</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Księżyc/Chmury</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_ico_zielona">
+    <property name="geometry">
+     <rect>
+      <x>115</x>
+      <y>230</y>
+      <width>124</width>
+      <height>107</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ico_gorzow">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>140</y>
+      <width>124</width>
+      <height>107</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ico_szczecin">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>60</y>
+      <width>124</width>
+      <height>107</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ico_bydgoszcz">
+    <property name="geometry">
+     <rect>
+      <x>285</x>
+      <y>95</y>
+      <width>124</width>
+      <height>107</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ico_poznan">
+    <property name="geometry">
+     <rect>
+      <x>308</x>
+      <y>178</y>
+      <width>124</width>
+      <height>107</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ico_warszawa">
+    <property name="geometry">
+     <rect>
+      <x>465</x>
+      <y>205</y>
+      <width>124</width>
+      <height>107</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ico_olsztyn">
+    <property name="geometry">
+     <rect>
+      <x>445</x>
+      <y>95</y>
+      <width>124</width>
+      <height>107</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ico_suwalki">
+    <property name="geometry">
+     <rect>
+      <x>542</x>
+      <y>55</y>
+      <width>124</width>
+      <height>107</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ico_gdansk">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>40</y>
+      <width>124</width>
+      <height>107</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ico_lodz">
+    <property name="geometry">
+     <rect>
+      <x>407</x>
+      <y>282</y>
+      <width>124</width>
+      <height>107</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ico_lublin">
+    <property name="geometry">
+     <rect>
+      <x>588</x>
+      <y>288</y>
+      <width>124</width>
+      <height>107</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ico_bialystok">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>145</y>
+      <width>124</width>
+      <height>107</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ico_katowice">
+    <property name="geometry">
+     <rect>
+      <x>358</x>
+      <y>372</y>
+      <width>124</width>
+      <height>107</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ico_krakow">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>392</y>
+      <width>124</width>
+      <height>107</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ico_rzeszow">
+    <property name="geometry">
+     <rect>
+      <x>604</x>
+      <y>388</y>
+      <width>124</width>
+      <height>107</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ico_wroclaw">
+    <property name="geometry">
+     <rect>
+      <x>235</x>
+      <y>303</y>
+      <width>124</width>
+      <height>107</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_dzien">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dzień</string>
+    </property>
+    <property name="icon">
+     <iconset resource="pogoda.qrc">
+      <normaloff>:/Pogoda/images/ikonki/slonce_50.png</normaloff>:/Pogoda/images/ikonki/slonce_50.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_noc">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>0</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Noc</string>
+    </property>
+    <property name="icon">
+     <iconset resource="pogoda.qrc">
+      <normaloff>:/Pogoda/images/ikonki/ksiezyc_50.png</normaloff>:/Pogoda/images/ikonki/ksiezyc_50.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_save">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>0</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Zapisz</string>
+    </property>
+    <property name="icon">
+     <iconset resource="pogoda.qrc">
+      <normaloff>:/Pogoda/images/save.png</normaloff>:/Pogoda/images/save.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_zielona">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>265</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_wroclaw">
+    <property name="geometry">
+     <rect>
+      <x>356</x>
+      <y>344</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_katowice">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>410</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_krakow">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>437</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_rzeszow">
+    <property name="geometry">
+     <rect>
+      <x>715</x>
+      <y>442</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_lublin">
+    <property name="geometry">
+     <rect>
+      <x>698</x>
+      <y>330</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_lodz">
+    <property name="geometry">
+     <rect>
+      <x>515</x>
+      <y>325</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_gorzow">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>180</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_poznan">
+    <property name="geometry">
+     <rect>
+      <x>425</x>
+      <y>215</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_warszawa">
+    <property name="geometry">
+     <rect>
+      <x>586</x>
+      <y>243</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_bialystok">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>185</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_olsztyn">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>138</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_suwalki">
+    <property name="geometry">
+     <rect>
+      <x>655</x>
+      <y>93</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_bydgoszcz">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>130</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_szczecin">
+    <property name="geometry">
+     <rect>
+      <x>256</x>
+      <y>98</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_gdansk">
+    <property name="geometry">
+     <rect>
+      <x>415</x>
+      <y>68</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_adv">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>10</y>
+      <width>101</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Zaawansowane</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_pogoda">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>50</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pogoda</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_temperatura">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>70</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Temperatura</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_adv">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>100</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>Białystok</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Bydgoszcz</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Gdansk</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Gorzów Wlkp.</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Katowice</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Kraków</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Łódź</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Lublin</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Olsztyn</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Poznań</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Rzeszów</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Suwałki</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Szczecin</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Warszawa</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Wrocław</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Zielona Góra</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pushButton_podglad">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>0</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Podgląd</string>
+    </property>
+    <property name="icon">
+     <iconset resource="pogoda.qrc">
+      <normaloff>:/Pogoda/images/podglad.png</normaloff>:/Pogoda/images/podglad.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_itemUp">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>150</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>▲</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_itemDown">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>190</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>▼</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_itemLeft">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>170</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>◄</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_itemRight">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>170</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>►</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_savepos">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>240</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Zapisz Pozycje</string>
+    </property>
+    <property name="icon">
+     <iconset resource="pogoda.qrc">
+      <normaloff>:/Pogoda/images/save.png</normaloff>:/Pogoda/images/save.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_adv_miasta">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>300</y>
+      <width>121</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Miasta na wierzchu</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_author">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>590</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Filip Glapiński - © 2014</string>
+    </property>
+   </widget>
+   <zorder>label_mapka_tlo</zorder>
+   <zorder>label_ico_zielona</zorder>
+   <zorder>label_ico_gorzow</zorder>
+   <zorder>label_ico_szczecin</zorder>
+   <zorder>label_ico_bydgoszcz</zorder>
+   <zorder>label_ico_poznan</zorder>
+   <zorder>label_ico_warszawa</zorder>
+   <zorder>label_ico_olsztyn</zorder>
+   <zorder>label_ico_suwalki</zorder>
+   <zorder>label_ico_gdansk</zorder>
+   <zorder>label_ico_lodz</zorder>
+   <zorder>label_ico_lublin</zorder>
+   <zorder>label_ico_bialystok</zorder>
+   <zorder>label_ico_katowice</zorder>
+   <zorder>label_ico_krakow</zorder>
+   <zorder>label_ico_rzeszow</zorder>
+   <zorder>label_ico_wroclaw</zorder>
+   <zorder>comboBox_bialystok</zorder>
+   <zorder>comboBox_bydgoszcz</zorder>
+   <zorder>comboBox_lodz</zorder>
+   <zorder>comboBox_gorzow</zorder>
+   <zorder>comboBox_katowice</zorder>
+   <zorder>comboBox_suwalki</zorder>
+   <zorder>comboBox_lublin</zorder>
+   <zorder>comboBox_poznan</zorder>
+   <zorder>comboBox_rzeszow</zorder>
+   <zorder>comboBox_warszawa</zorder>
+   <zorder>comboBox_olsztyn</zorder>
+   <zorder>comboBox_zielona</zorder>
+   <zorder>comboBox_szczecin</zorder>
+   <zorder>comboBox_krakow</zorder>
+   <zorder>comboBox_gdansk</zorder>
+   <zorder>comboBox_wroclaw</zorder>
+   <zorder>pushButton_dzien</zorder>
+   <zorder>pushButton_noc</zorder>
+   <zorder>pushButton_save</zorder>
+   <zorder>lineEdit_zielona</zorder>
+   <zorder>lineEdit_wroclaw</zorder>
+   <zorder>lineEdit_katowice</zorder>
+   <zorder>lineEdit_krakow</zorder>
+   <zorder>lineEdit_rzeszow</zorder>
+   <zorder>lineEdit_lublin</zorder>
+   <zorder>lineEdit_lodz</zorder>
+   <zorder>lineEdit_gorzow</zorder>
+   <zorder>lineEdit_poznan</zorder>
+   <zorder>lineEdit_warszawa</zorder>
+   <zorder>lineEdit_bialystok</zorder>
+   <zorder>lineEdit_olsztyn</zorder>
+   <zorder>lineEdit_suwalki</zorder>
+   <zorder>lineEdit_bydgoszcz</zorder>
+   <zorder>lineEdit_szczecin</zorder>
+   <zorder>lineEdit_gdansk</zorder>
+   <zorder>checkBox_adv</zorder>
+   <zorder>radioButton_pogoda</zorder>
+   <zorder>radioButton_temperatura</zorder>
+   <zorder>comboBox_adv</zorder>
+   <zorder>pushButton_podglad</zorder>
+   <zorder>pushButton_itemUp</zorder>
+   <zorder>pushButton_itemDown</zorder>
+   <zorder>pushButton_itemLeft</zorder>
+   <zorder>pushButton_itemRight</zorder>
+   <zorder>pushButton_savepos</zorder>
+   <zorder>checkBox_adv_miasta</zorder>
+   <zorder>label_author</zorder>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="pogoda.qrc"/>
+ </resources>
+ <connections/>
+</ui>
